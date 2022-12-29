@@ -1,5 +1,5 @@
 import time
-from multiprocessing import Process, cpu_count, Pool
+from multiprocessing import cpu_count, Pool
 from datetime import datetime
 
 def print_time():
@@ -27,15 +27,6 @@ if __name__ == "__main__": # required for multiprocessing
         "erlang@armstrong.org", # 11
         "zig@zag.co", # 12
     ]
-
-    # procs = []
-    # for email in emails:
-    #     p = Process(target=send_email, args=(email,))
-    #     procs.append(p)
-    #     p.start()
-    
-    # for proc in procs:
-    #     proc.join()
     
     print_time()
     core_count = cpu_count()
